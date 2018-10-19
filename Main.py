@@ -1,5 +1,6 @@
 from gtts import gTTS
 import os
+
 def profile():
   print("what do you want to edit")
   f = open(filename,"wt")
@@ -8,8 +9,10 @@ def profile():
   color = input("what is your favourite color")
   food = input("what is your favourite food")
   jokes = input("do you like jokes 1=yes, 2=no")
-  intelligence = input("how smart are you")
-  f.write('{}\n{}\n{}\n'.format(username,age,color))
+  print("What is your IQ level? Please copy and paste the following link into your browser to find out:")
+  intelligence = input("https://www.123test.com/iq-test/")
+  
+  f.write('{}\n{}\n{}\n{}\n{}\n{}\n'.format(username,age,color,food,jokes,intelligence))
   f.close()
 print("hi I am your personal assistant sonia")
 print("plese if you do not have a profile make a .txt file named (username).txt")
@@ -23,8 +26,10 @@ if directory == ("1"):
   color = input("what is your favourite color")
   food = input("what is your favourite food")
   jokes = input("do you like jokes 1=yes, 2=no")
-  intelligence = input("how smart are you")
-  f.write('{}\n{}\n{}\n'.format(username,age,color))
+  print("What is your IQ level? Please copy and paste the following link into your browser to find out:")
+  print()
+  intelligence = input("https://www.123test.com/iq-test/")
+  f.write('{}\n{}\n{}\n{}\n{}\n{}\n'.format(username,age,color,food,jokes,intelligence))
   f.close()
 if directory == ("2"):
   f = open(filename, "r")
