@@ -57,7 +57,7 @@ if directory == ("2"):
     if todo == ("chat") or todo == ("6"):
       print("coming soon")
     if todo == ("credits") or todo == ("7"):
-      print("credit to Hunter Harrison, Ethan Mederios, Connor Madden & Rohith Mohan")
+      print("credit to Hunter Harrison, Ethan Mederios, Connor Madden, Rohith Mohan, & Bheema Marabai")
       credit = input("type the first name of the person who you want to learn about")
       if credit == ("Hunter") or credit == ("hunter"):
         print("coming soon")
@@ -67,6 +67,9 @@ if directory == ("2"):
         print("coming soon")
       if credit == ("Rohith") or credit == ("rohith"):
         print("coming soon") 
+      if credit == ("Bheema") or credit == ("bheema"):
+        print("coming soon")
+      
     
   
     
