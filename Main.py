@@ -9,7 +9,7 @@ def profile():
   food = input("what is your favourite food")
   jokes = input("do you like jokes 1=yes, 2=no")
   intelligence = input("how smart are you")
-  f.write('{}\n{}\n{}\n'.format(username,age,color))
+  f.write('{}\n{}\n{}\n'.format(username,age,color))sdif8hg9eisjbkrkj mn fd
   f.close()
 print("hi I am your personal assistant sonia")
 print("plese if you do not have a profile make a .txt file named (username).txt")
