@@ -1,0 +1,7 @@
+type the number beside the catagory:
+2-time
+3-math
+4-password generator
+5-profile
+6-chat
+7-credits
