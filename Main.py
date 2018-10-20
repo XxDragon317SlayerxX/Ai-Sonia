@@ -1,7 +1,12 @@
 from gtts import gTTS
 import os
+import replit
+import sys
+import random
+import math
+username = "0"
 
-def profile():
+def profile(username):
   print("what do you want to edit")
   f = open(filename,"wt")
   username = str(username)
@@ -11,9 +16,9 @@ def profile():
   jokes = input("do you like jokes 1=yes, 2=no")
   print("What is your IQ level? Please copy and paste the following link into your browser to find out:")
   intelligence = input("https://www.123test.com/iq-test/")
-  
   f.write('{}\n{}\n{}\n{}\n{}\n{}\n'.format(username,age,color,food,jokes,intelligence))
   f.close()
+
 print("hi I am your personal assistant sonia")
 print("plese if you do not have a profile make a .txt file named (username).txt")
 username = input("type your username")
@@ -31,6 +36,7 @@ if directory == ("1"):
   intelligence = input("https://www.123test.com/iq-test/")
   f.write('{}\n{}\n{}\n{}\n{}\n{}\n'.format(username,age,color,food,jokes,intelligence))
   f.close()
+  directory = ("2")
 if directory == ("2"):
   f = open(filename, "r")
   lines = f.readlines()
@@ -58,7 +64,7 @@ if directory == ("2"):
     if todo == ("password generator") or todo == ("4"):
       print("coming soon")
     if todo == ("profile") or todo == ("5"):
-      profile()
+      profile(username)
     if todo == ("chat") or todo == ("6"):
       print("coming soon")
     if todo == ("credits") or todo == ("7"):
@@ -74,14 +80,6 @@ if directory == ("2"):
         print("coming soon") 
       if credit == ("Bheema") or credit == ("bheema"):
         print("coming soon")
-      
-    
-  
-    
-    
-
-
-    
-
-f.close()
-
+    if todo == ("exit") or todo == ("8"):
+      f.close()
+      raise SystemExit(1)
