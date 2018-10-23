@@ -42,10 +42,10 @@ if directory == ("2"):
   lines = f.readlines()
   name = (lines[0])  # or whatever you want to do with 
   if name == ("hunter") or name == ("Hunter"):
-    print("hi " + name + " My name is sonia, I am your personal assistant, maybe we could blow up North Korea")
+    print("hi " + name + " My name is Sonia, I am your personal assistant, maybe we could blow up North Korea")
   else:
-    print("hi " + name + " My name is sonia, I am your personal assistant")
-    tts = gTTS(text="hi " + name + " My name is sonia, I am your personal assistant", lang="en")
+    print("hi " + name + " My name is Sonia, I am your personal assistant")
+    tts = gTTS(text="hi " + name + " My name is Sonia, I am your personal assistant", lang="en")
     tts.save("introduction.mp3")
     os.system("mpg321 introduction.mp3")
   while True:
